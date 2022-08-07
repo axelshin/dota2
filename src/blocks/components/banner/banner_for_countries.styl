@@ -1,0 +1,80 @@
+.section--banner
+    padding-bottom 0
+
+.banner
+    padding (50/16em) (20/16em) (52/16em)
+    background-color $banner-bg
+
+        
+    +md-block()
+        padding (52/16em) (88/16em) 
+    
+    +lg-block()
+        padding (64/16em) (160/16em) (70/16em)
+        display flex
+        justify-content space-between
+        align-items center
+
+    &__left
+
+        +lg-block()
+            width (862/16em)
+            padding-top (13/16em)
+
+    &__right
+
+        +lg-block()
+            width (636/16em)
+
+    &__title
+        font-size (12/16em)
+        font-weight 700
+        line-height (14/12em)
+        text-transform uppercase
+        color $banner-title
+        margin-left (20/12em)
+        margin-bottom (10/12em)
+
+        +md-block()
+            font-size (14/16em)
+            margin-left (35/14em)
+        
+        +lg-block()
+            font-size (20/16em)
+            margin-left (47/20em)
+            margin-bottom (13/20em)
+
+    &__subtitle
+        color $banner-title
+        width (217/32em)
+        margin-bottom (36/32em)
+
+        +md-block()
+            width auto
+            margin-bottom (40/48em)
+
+        &:before
+        &:after
+            border-color $banner-title
+        
+    &__descr
+        font-size (14/16em)
+        line-height 1.5
+        margin 0 0 0 (28/14em)
+
+        +md-block()
+            font-size (18/16em)
+            width (450/18em)
+            margin-left auto
+            margin-right auto
+        
+        +lg-block()
+            font-size (22/16em)
+            width auto
+
++lg-block()
+    .corner--banner
+        display inline-block
+        
+        &:before
+            right (-13/70em)

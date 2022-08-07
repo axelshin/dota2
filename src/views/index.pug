@@ -1,0 +1,96 @@
+extends layouts/default
+
+block variables
+	- const title = "Start_02_21"
+
+block content
+	
+	ul(style="width: 600px; min-height: 600px; display: flex; flex-direction: column; margin: auto; font-size: 30px; list-style: none; justify-content: center;")
+		//- li(style="margin-bottom: 20px;")
+		//- 	a(href="./index_for_russia.html") Стартовая основная
+		li
+			a(href="./index.html") Стартовая РФ
+
+		//- li
+		//- 	a(href="./index_for_countries-1.html") Стартовая альтернатива 1
+		
+		//- li
+		//- 	a(href="./index_for_countries-2.html") Стартовая альтернатива 2
+
+//- extends layouts/default
+
+//- block variables
+//- 	- const title = "Start_10_21"
+
+//- block content
+//- 	include ../blocks/components/intro/intro
+//- 	include ../blocks/components/steps/steps	
+//- 	//- include ../blocks/components/therapy/therapy
+//- 	//- include ../blocks/components/instruction/instruction	
+//- 	include ../blocks/components/banner/banner
+//- 	include ../blocks/components/products/products
+//- 	include ../blocks/components/video/video
+//- 	include ../blocks/components/share/share
+//- 	//- include ../blocks/components/timer/timer
+//- 	include ../blocks/components/timer2/timer2
+//- 	include ../blocks/components/pluses/pluses
+//- 	include ../blocks/components/facts/facts
+//- 	include ../blocks/components/share/share-bottom
+//- 	include ../blocks/components/popup/popup
+
+//- block scripts
+//- 	script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js")
+	
+//- 	script(src="https://faberlic.com/attachments/content/213372/js/jquery.magnific-popup.min.js")
+//- 	script(src="https://static.faberlic.com/start_09_20/js/circle.js")
+//- 	script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js")
+//- 	script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js")
+//- 	script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/ScrollToPlugin.min.js")
+//- 	script(src="./js/main.js")
+//- 	script(src="https://faberlic.com/attachments/content/files/js/share_x.js")
+//- 	script.
+//- 		$(document).ready(function(ev) {
+//- 			$('a[href^="#scrollto"]').bind('click.smoothscroll',function (e) {
+//- 				var target = this.hash,
+//- 					$target = $(target);
+			
+//- 				$('html, body').stop().animate( {
+//- 					'scrollTop': $target.offset().top - 200
+//- 				}, 900, 'swing', function () {
+//- 					window.location.hash = target;
+//- 				} );
+//- 			});
+//- 			(function ($) {
+//- 				$(document).ready(function () {
+		
+//- 				var buyBatton = document.querySelectorAll(".btnn-primary");
+//- 				var wrapGreen = document.querySelectorAll(".more-link");
+		
+//- 				wrapGreen.forEach(function(element) {
+//- 					element.classList.add("js-landing-button");
+//- 					element.setAttribute("data-title", element.innerText);
+//- 				});
+//- 					buyBatton.forEach(function(element) {
+//- 					element.classList.add("js-landing-button");
+//- 					element.setAttribute("data-title", element.innerText);
+//- 				});
+					
+//- 				})
+//- 			})(jQuery);
+//- 			$('.circle-wrapper').on('touchstart click', function () {
+//- 				var uri = 'https://new.faberlic.com/ru/contsec/business/content-5138';
+//- 				window.open(uri);
+//- 			});
+		
+//- 			$('.circle__close').on('touchstart click', function (e) {
+//- 				e.stopPropagation();
+//- 				e.preventDefault();
+//- 				$.magnificPopup.close();
+//- 			});
+//- 			// share viber hot-fix
+//- 			var vr = $('.icn-web-viber-color').eq(1);
+//- 			if( vr.length ){    
+//- 				vr.attr('href','javascript:void(0)');
+//- 			}
+//- 			// share viber hot-fix end
+//- 		});

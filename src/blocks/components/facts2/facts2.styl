@@ -1,0 +1,293 @@
+.facts2
+    margin-bottom (50/16em)
+
+    +md-block()
+        margin-bottom (100/16em)
+
+    +lg-block()
+        display flex
+
+    &__svg
+        position absolute
+
+        path
+            fill $white
+            fill-opacity 0.3
+
+    &__left
+
+        height (400/16em)
+        background-image url(../img/content/facts2/facts2-bg-sm.jpg)
+        background-size 100% 100%
+        background-position right top
+        background-repeat no-repeat
+        padding (110/16em) (20/16em) (20/16em) (20/16em)
+
+        +md-block()
+            background-image url(../img/content/facts2/facts2-bg-md.jpg)
+            height (500/16em)
+            padding-left (73/16em)
+            padding-top (72/16em)            
+        
+        +lg-block()
+            background-image url(../img/content/facts2/facts2-bg-lg.jpg)
+            height (700/16em)
+            width (1245/16em)
+            min-width (1245/16em)
+            padding-left (199/16em)
+            padding-top (194/16em)
+            padding-right (199/16em)
+            background-position center center
+            padding-top 1em
+            padding-bottom 1em
+            padding 1em 20em 1em (200/16em)
+            display flex
+            flex-direction column
+            justify-content center
+    
+    &__right
+        padding-left (20/16em)
+        padding-right (20/16em)
+
+        +md-block()
+            padding-left (83/16em)
+            padding-right (83/16em)
+        
+        +lg-block()
+            padding-left 0
+    
+    &__title
+        line-height 1.2
+        font-weight 700
+        font-size (12/16em)
+        color $white
+        text-transform uppercase
+        margin 0 0 (9/12em)
+        padding-left (24/12em)
+        padding-right (24/12em)
+
+        +md-block()
+            font-size (14/16em)
+            padding-left (36/14em)
+            padding-right (36/14em)
+            margin-bottom (10/14em)
+        
+        +lg-block()
+            font-size (20/16em)
+            padding-left (47/20em)
+            padding-right (47/20em)
+            margin-bottom (13/20em)
+
+    &__item
+        width (235/16em)
+        height (235/16em)
+        position relative
+        display flex
+        padding (20/16em) (30/16em) (28/16em) (20/16em)
+        color $white
+        flex-direction column
+        justify-content flex-end
+        overflow hidden
+
+        +md-block()
+            width (301/16em)
+            height (301/16em)
+            padding (20/16em) (30/16em) (37/16em) (26/16em)
+        
+        +lg-block()
+            width (400/16em)
+            height (400/16em)
+            padding (20/16em) (30/16em) (50/16em) (35/16em)
+
+        &--1
+            background-color $facts2_item_1_bg_color
+            margin-top (-31/16em)
+            color $facts2_item_1_color
+
+            +md-block()
+                margin-top (-117/16em)
+            
+            +lg-block()
+                margin-top (93/16em)
+                margin-left (-265/16em)
+
+            .facts2__svg
+                top 1em
+                right (-9/16em)
+
+                +md-block()
+                    top (21/16em)
+                    right (-12/16em)
+
+                +lg-block()
+                    top (28/16em)
+                    right (-17/16em)
+
+                svg
+                    width (105/16em)
+                    height (105/16em)
+
+                    +md-block()
+                        width (135/16em)
+                        height (129/16em)
+                    
+                    +lg-block()
+                        width (180/16em)
+                        height (172/16em)
+                    
+                    path
+                        fill $facts2_item_1_fill
+                        fill-opacity 0.2
+
+        &--2
+            background-color $facts2_item_2_bg_color
+            z-index 1
+            margin-left (45/16em)
+            margin-top -1em
+            color $facts2_item_2_color
+            
+            +md-block()
+                margin-left (301/16em)
+                margin-top (-222/16em)
+            
+            +lg-block()
+                margin-left (135/16em)
+                margin-top (-300/16em)
+
+            .facts2__svg
+                top 1em
+                right (-20/16em)
+
+                +md-block()
+                    top (20/16em)
+                    right (-26/16em)
+                
+                +lg-block()
+                    top (26/16em)
+                    right (-35/16em)
+
+                svg
+                    width (100/16em)
+                    height (100/16em)
+
+                    +md-block()
+                        width (129/16em)
+                        height (129/16em)
+                    
+                    +lg-block()
+                        width (172/16em)
+                        height (170/16em)
+
+                    path
+                        fill $facts2_item_2_fill
+        
+        &--3
+            background-color $facts2_item_3_bg_color
+            color $facts2_item_3_color
+            margin-top (-34/16em)
+            margin-left (23/16em)
+
+            +md-block()
+                margin-top (-79/16em)
+                margin-left (44/16em)
+            
+            +lg-block()
+                margin-top (-100/16em)
+                margin-left (-206/16em)
+
+            .facts2__svg
+                top (23/16em)
+                right (-25/16em)
+
+                +md-block()
+                    top (30/16em)
+                    right (-33/16em)
+                
+                +lg-block()
+                    top (40/16em)
+                    right (-44/16em)
+
+                svg
+                    width (76/16em)
+                    height (100/16em)
+
+                    +md-block()
+                        width (98/16em)
+                        height (129/16em)
+                    
+                    +lg-block()
+                        width (130/16em)
+                        height (171/16em)
+                    
+                    path
+                        fill $facts2_item_3_fill
+            
+            .facts2__subnote
+
+                +md-block()
+                    width (230/18em)
+    
+    &__note
+        font-size (26/16em)
+        line-height (31/26em)
+        font-weight 900
+        text-transform uppercase
+        margin-bottom (8/26em)
+
+        +md-block()
+            font-size (35/16em)
+            line-height (41/35em)
+            margin-bottom (8/35em)
+        
+        +lg-block()
+            font-size (46/16em)
+            line-height (55/46em)
+            margin-bottom (8/46em)
+    
+    &__subnote
+        font-size (14/16em)
+        line-height (17/14em)
+
+        +md-block()
+            font-size (18/16em)
+            line-height (22/18em)
+        
+        +lg-block()
+            font-size (24/16em)
+            line-height (29/24em)
+
+
+.corner--facts2
+    color $white
+    margin-bottom (41/32em)
+    width fit-content
+
+    &:before
+    &:after
+        border-color #fff
+
+    +md-block()    
+        margin-bottom (66/48em)
+
+    +lg-block()
+        // width (703/70em)
+        margin-bottom (90/70em)
+
+    .corner-empt
+        &:before
+            border-color #fff
+
+.btnn-primary--facts2
+    margin-left (20/12em)
+
+    &:hover
+    &:focus
+        background-color transparent
+
+    +md-block()
+        margin-left (37/18em)
+        min-width (307/18em)
+        min-height (53/18em)
+    
+    +lg-block()
+        margin-left (53/18em)

@@ -1,0 +1,95 @@
+.section--banner
+    padding-bottom 0
+
+.banner
+    padding (50/16em) (20/16em) (52/16em)
+    background-color $banner-bg
+    display flex
+    flex-direction column
+        
+    +md-block()
+        padding (52/16em) (80/16em) 
+    
+    +lg-block()
+        padding (64/16em) (160/16em) (70/16em)
+        flex-direction row
+        justify-content space-between
+        align-items center
+
+    &__left
+
+        margin 0 auto
+
+        +lg-block()
+            width (890/16em)
+            padding-top (13/16em)
+
+    &__right
+
+        +lg-block()
+            min-width (636/16em)
+            width (636/16em)
+            margin-left (80/16em)
+
+    &__title
+        font-size (12/16em)
+        font-weight 700
+        line-height (14/12em)
+        text-transform uppercase
+        color $banner-title
+        padding-left (24/12em)
+        padding-right (24/12em)
+        margin-bottom (10/12em)
+
+        +md-block()
+            font-size (14/16em)
+            padding-left (35/14em)
+            padding-right (35/14em)
+        
+        +lg-block()
+            font-size (20/16em)
+            padding-left (47/20em)
+            padding-right (47/20em)
+            margin-bottom (13/20em)
+
+    &__subtitle
+        color $banner-title
+        margin-bottom (36/32em)
+        box-sizing unset
+
+        +md-block()
+            margin-bottom (40/48em)
+
+        &:before
+        &:after
+            border-color $banner-title
+        
+    &__descr
+        font-size (14/16em)
+        line-height 1.5
+        margin 0 0 0 (28/14em)
+
+        +md-block()
+            font-size (18/16em)
+            width (450/18em)
+            margin-left auto
+            margin-right auto
+        
+        +lg-block()
+            font-size (22/16em)
+            width auto
+
+.corner--banner
+    .corner-empt
+        &:before
+            border-color $banner-title
+
+            +lg-block()
+                top (-40/35em)
+
+.section--banner.fit-font-size-done
+    .banner__left
+        margin 0
+
+        +md-block()
+            margin 0 auto

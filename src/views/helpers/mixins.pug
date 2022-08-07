@@ -1,0 +1,5 @@
+include ../../blocks/components/forms/form.pug
+
+mixin icon(name)
+	svg.icon(class="icon--" + name)&attributes(attributes)
+		use(xlink:href="https://static.faberlic.com/start_09_20/img/sprites/sprite.svg#" + name)

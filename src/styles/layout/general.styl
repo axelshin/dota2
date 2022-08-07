@@ -1,0 +1,66 @@
+*,
+*::after,
+*::before
+    box-sizing border-box
+
+h1, h2, h3, h4, h5, h6, ul
+    margin 0
+    padding 0
+
+.container
+    container()
+    padding-left 1.25em
+    padding-right 1.25em
+    
+    +md-block()
+        max-width 100%  
+        padding-left 3.5em
+        padding-right 3.5em
+
+    +lg-block()
+        padding-left 17.875em
+        padding-right 17.875em
+
+#fl_start_lp
+    font-size calc(100vw/20)
+
+    +md-block()
+        font-size calc(100vw/48)
+
+    +lg-block()
+        font-size calc(100vw/120)
+
+.fl_start_lp
+    color $primary-text
+    background #fff
+    overflow hidden
+    padding 0 
+    font-family Gotham, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji
+    position relative
+
+.section
+
+    &__title
+        font-size 1.5em
+        text-align center
+        line-height 1.25
+        margin-bottom 1em
+        
+        +md-block()
+            font-size 1.875em
+        
+        +lg-block()
+            font-size 2.5em
+            margin-bottom 1em
+
+@media only screen and (max-width: 475px) {
+  .vacuum_promo {
+    transform:translateY(50px)!important;
+  }
+  .vacuum_promo img {
+    width: 35px!important;
+  }
+}
+
+.circle-small.show
+    bottom 25px

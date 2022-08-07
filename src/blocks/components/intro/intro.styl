@@ -1,0 +1,197 @@
+.section--intro	
+	
+	.more-link
+		color $intro-more-color
+		font-weight 600
+
+		+md-block()
+			font-size (18/16em)
+
+.intro
+
+	+md-block()
+		display flex
+
+	&__content
+
+		&-left
+			background-color $intro-bg
+
+			padding (40/16em) (24/16em) (15/16em) (24/16em)
+			min-height (368/16em)
+			display flex
+			flex-direction column
+
+			+md-block()
+				flex-grow 1
+				padding 3em 2em 2.75em 3.5em
+				display flex
+				flex-direction column
+				justify-content center
+				align-items center
+			
+			+lg-block()
+				padding 1em 8em
+				width auto
+				// width (960/16em)
+				// min-width (960/16em)
+				max-width (960/16em)
+
+			&-inner
+				margin 0 auto
+
+		&-right
+			background-image url(../img/content/intro/intro-bg-sm.jpg)
+			background-size cover
+			background-position 0 0
+			background-repeat no-repeat
+			width (320/16em)
+			min-height (300/16em)
+			display flex
+			flex-direction column
+
+			+md-block()
+				background-image url(../img/content/intro/intro-bg-md.jpg)
+				min-width (286/16em)
+				max-width (286/16em)
+				min-height (600/16em)
+				text-align center
+				display block
+			
+			+lg-block()
+				background-image url(../img/content/intro/intro-bg-lg.jpg)
+				min-width (960/16em)
+				max-width (960/16em)
+				min-height (900/16em)
+				text-align right
+
+	&__data
+		font-size (12/16em)
+		font-weight 700
+		line-height 1.2
+		color $intro-date-color
+		text-transform uppercase
+		padding-left (20/12em)
+		padding-right (20/12em)
+		margin-bottom (10/12em)
+			
+		+md-block()
+			font-size em(14)
+			padding-left (32/14em)
+			padding-right (32/14em)
+
+		+lg-block()
+			font-size em(20)
+			padding-left (47/20em)
+			padding-right (47/20em)
+			margin-bottom (13/20em)
+
+	&__title
+		color $intro-title-color
+		font-size (26/16em)
+		line-height 1
+		padding-left (18/26em)
+		padding-right (18/26em)
+
+		+md-block()
+			font-size (40/16em)
+		
+		+lg-block()
+			font-size (64/16em)
+
+	&__text
+		font-size 1em
+		margin-bottom (20/16em)
+		font-weight 700
+		color $intro-text-color
+		line-height (19/16em)
+		text-transform uppercase
+		margin-left (35/16em)
+		color $intro-text-color
+
+		+md-block()
+			font-size em(24)
+			margin-bottom (27/24em)
+			margin-left (44/24em)
+
+		+lg-block()
+			font-size em(30)
+			margin-bottom (43/30em)
+			margin-left (70/30em)
+		
+		p
+			margin-bottom 0
+
+	&__note
+		font-size (10/16em)
+		color #0A4A67
+		margin-left (35/10em)
+		line-height 1
+		display flex
+
+		&-left
+			margin-right 0.4em
+
+		+md-block()
+			font-size (10/16em)
+			line-height (16/10em)
+			margin 0
+			position absolute
+			left (104/10em)
+			bottom (24/10em)
+		
+		+lg-block()
+			font-size (14/16em)
+			line-height (18/14em)
+			left (260/14em)
+			right 1em
+			bottom (30/14em)
+
+.more-link--intro
+	margin-left (35/12em)
+
+	+lg-block()
+		margin-left (77/18em)
+
+.sticker--intro
+	margin 0 em(20) 0 auto
+	background-color rgba(#fff,0.7)
+
+	.sticker__title
+	.sticker__price
+		color $primary-color
+
+	+md-block()
+		margin 0
+	
+	+lg-block()
+		margin 0 (66/16em) 0 0
+
+.btnn-primary--intro
+	margin-left (35/12em)
+	margin-bottom (17/12em)
+	min-height (35/12em)
+	padding (8/12em) (19/12em)
+	white-space nowrap
+	min-width 0
+	// color $white
+
+	&:hover
+	&:focus
+		background-color transparent
+
+	.btnn-primary__arrow
+		path
+			// fill $white
+
+	+md-block()
+		padding (8/18em) (20/18em)
+		margin-bottom (32/18em)
+		min-width 0
+		margin-left (44/18em)
+	
+	+lg-block()
+		margin-left (77/18em)
+		padding-left (32/18em)
+		padding-right (32/18em)
+		margin-bottom (36/18em)

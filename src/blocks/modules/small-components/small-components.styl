@@ -1,0 +1,468 @@
+.btnn-row
+	text-align center
+	display flex
+	flex-direction column
+	justify-content center
+	align-items center
+
+.btnn-primary
+	color $primary-btn-color
+	font-size em(12)
+	line-height 1
+	background-color $primary-btn-bg
+	padding	0.5em (20/12em)
+	min-height: (35/12em)
+	// min-width (200/12em)
+	border-radius 0
+	display inline-flex
+	align-items center
+	box-shadow none
+	border (1/12em) solid transparent
+	transition all .2s linear
+	box-sizing border-box
+	font-weight 600
+	margin-left auto
+	margin-right auto
+	justify-content space-around
+
+	&__arrow
+		margin-left 0.8em
+		fill $white
+		width (19/12em)
+		height (9/12em)
+
+		path
+			transition .2s all linear
+	
+	+md-block()
+		font-size em(18)
+		min-height (50/18em)
+		padding	0.5em 2em
+		// min-width (280/18em)
+
+	+lg-block()
+		font-size em(18)
+		margin-bottom 1.5em
+		padding	0.75em 2em
+		min-height (50/18em)
+	
+	&:hover
+	&:focus
+		color $primary-btn-color-hover
+		text-decoration none
+		background $primary-btn-bg-hover
+		border-color $primary-btn-bg
+		
+		.btnn-primary__arrow
+		.btnn-primary__arrow path
+			fill $primary-btn-color-hover	
+
+	&--white
+		background-color $white_btn_bgc
+		color $white_btn_color
+		
+		.btnn-primary__arrow
+			path
+				fill $white_btn_color
+
+		&:hover
+		&:focus
+			color $white_btn_bgc_hover
+			background-color transparent
+			border-color $white_btn_bgc_hover
+
+			.btnn-primary__arrow
+			.btnn-primary__arrow path
+				fill $white_btn_bgc_hover
+	
+.more-link
+	font-size (12/16em)
+	line-height 1
+	text-transform none
+	text-decoration underline
+	display inline-flex
+
+	&:hover
+		text-decoration none
+	
+	+md-block()
+		font-size (16/16em)	
+	
+	+lg-block()
+		font-size (18/16em)
+
+.sticker
+
+	display inline-flex
+	flex-direction column
+	border (3/16em) solid $sticker-red
+	text-align center
+	text-transform uppercase
+	color $white
+	padding-bottom (3/16em)
+	
+	+md-block()
+		border-width (4/16em)
+
+	+lg-block()
+		border-width (5/16em)
+		margin (82/16em) 0 0 (150/16em)
+	
+	&__red
+		color $sticker-color
+		font-size (11/16em)
+		font-weight 900
+		line-height 1
+		background-color $sticker-red
+		padding (2/11em) 0 (8/11em)
+		position relative
+		z-index 0
+
+		&:before
+			z-index -1
+			content ''
+			left -2px
+			right -2px
+			bottom 0
+			top -2px
+			display block
+			background-color $sticker-red
+			position absolute
+		
+		+md-block()
+			font-size (15/16em)
+			padding (3/15em) 0 (13/15em)
+
+		+lg-block()
+			font-size (20/16em)
+			padding (4/20em) 0 (16/20em)
+
+		big
+			font-size: (22/11em)
+			line-height: 1
+
+			+md-block()
+				font-size: (30/15em)
+			
+			+lg-block()
+				font-size: (40/20em)
+
+	&__title
+		font-size (9/16em)
+		padding-top (6/9em)
+		text-align left
+		margin-left (16/9em)
+		margin-right (16/9em)
+		color $sticker-title-color
+		font-weight 600
+
+		+md-block()
+			font-size (12/16em)
+			margin-left (22/12em)
+			margin-right (22/12em)
+		
+		+lg-block()
+			font-size 1em
+			margin-left (30/16em)
+			margin-right (30/16em)
+
+	&__price
+		text-align left
+		margin (-2/16em) 0 0 1em
+		color $sticker-price-color
+
+		+md-block()
+			margin-left (22/16em)
+		
+		+lg-block()
+			margin-left (30/16em)
+
+		&-num
+			font-size (20/16em)
+			text-decoration line-through
+			font-weight 600
+
+			+md-block()
+				font-size (28/16em)
+			
+			+lg-block()
+				font-size (36/16em)				
+		
+	&__valute
+		font-size (13/16em)
+		font-weight 600
+
+		+md-block()
+			font-size (18/16em)
+		
+		+lg-block()
+			font-size (24/16em)
+
+.corner
+	font-size em(32)
+	line-height 1
+	font-weight 900
+	text-transform uppercase
+	position relative
+	padding-left (24/32em)
+	padding-right (24/32em)
+	margin-bottom 0.5em
+
+	+md-block()
+		font-size (48/16em)
+		margin-bottom (30/48em)
+	
+	+lg-block()
+		font-size (70/16em)
+		margin-bottom (40/70em)
+		padding-left (45/70em)
+		padding-right (45/70em)
+
+	&:before
+	&:after
+		content ''
+		display block
+		position absolute
+		font-size (16/32em)
+		width (23/16em)
+		height (23/16em)
+
+		+md-block()
+			font-size (16/48em)
+			width (36/16em)
+			height (36/16em)
+			border-width (10/16em)
+		
+		+md-block()
+			font-size (16/70em)
+			width (50/16em)
+			height (50/16em)
+			border-width (14/16em)
+
+	&:before
+		right 0
+		top (-20/16em)
+		border-top (7/16em) solid $corner-border-color
+		border-right (7/16em) solid $corner-border-color
+
+		+md-block()
+			top (-28/16em)
+		
+		+lg-block()
+			top (-39/16em)
+	
+	&:after
+		left 0
+		bottom -1em
+		border-bottom (7/16em) solid $corner-border-color
+		border-left (7/16em) solid $corner-border-color
+
+		+md-block()
+			bottom (-34/16em)
+
+		+lg-block()
+			bottom (-39/16em)
+
+	&.corner--modified
+
+		padding-right 0
+
+		&:before
+			display none
+
+	&-empt
+		position absolute
+		right 0
+		top 0
+		bottom 0
+
+		&:before
+			content ''
+			display block
+			position absolute
+			font-size (16/32em)
+			width (23/16em)
+			height (23/16em)
+			left 0
+			top (-20/16em)
+			border-top (7/16em) solid $corner-border-color
+			border-right (7/16em) solid $corner-border-color
+
+			+md-block()
+				top (-26/24em)
+			
+			+lg-block()
+				top (-40/35em)
+
+
+.md-visible
+	display: none
+
+	+md-block()
+		display: block
+
+.nowrap
+	white-space nowrap
+
+.md-nowrap	
+	+md-block()
+		white-space nowrap
+
+.only-sm-visible
+	+md-block()
+		display: none
+
+.only-sm-hidden
+	display none
+
+	+md-block()
+		display block
+
+.only-md-visible
+	display none
+
+	+md-block()
+		display block
+	
+	+lg-block()
+		display none
+
+.only-lg-visible
+	
+	display none
+
+	+lg-block()
+		display block
+
+.only-sm-md-visible
+.only-lg-hidden
+	+lg-block()
+		display none
+
+.only-md-hidden
+	+md-block()
+		display none
+	
+	+lg-block()
+		display block
+
+
+.span-only-lg-visible
+	display none
+	line-height 0
+	font-size 0
+	
+	+lg-block()
+		display block
+
+
+.span-only-md-visible
+	display none
+	line-height 0
+	font-size 0
+	
+	+md-block()
+		display block
+	
+	+lg-block()
+		display none
+
+
+.fixed-button
+	display none
+
+	+md-block()	
+		display block
+		bottom 120px
+
+
+
+// .corner
+// 	font-size em(32)
+// 	line-height 1
+// 	font-weight 900
+// 	text-transform uppercase
+// 	position relative
+// 	padding-left (24/32em)
+// 	padding-right (24/32em)
+// 	margin-bottom 0.5em
+// 	position relative
+
+// 	+md-block()
+// 		font-size (48/16em)
+// 		margin-bottom (30/48em)
+	
+// 	+lg-block()
+// 		font-size (70/16em)
+// 		margin-bottom (40/70em)
+// 		padding-left (45/70em)
+// 		padding-right (45/70em)
+
+// 	// &:before
+// 	&:after
+// 		content ''
+// 		display block
+// 		position absolute
+// 		font-size (16/32em)
+// 		width (23/16em)
+// 		height (23/16em)
+
+// 		+md-block()
+// 			font-size (16/48em)
+// 			width (36/16em)
+// 			height (36/16em)
+// 			border-width (10/16em)
+		
+// 		+md-block()
+// 			font-size (16/70em)
+// 			width (45/16em)
+// 			height (45/16em)
+// 			border-width (14/16em)
+
+// 	&:before
+// 		right 0
+// 		top (-20/16em)
+// 		border-top (7/16em) solid $white
+// 		border-right (7/16em) solid $white
+
+// 		+md-block()
+// 			top (-30/16em)
+		
+// 		+lg-block()
+// 			top (-39/16em)
+	
+// 	&:after
+// 		left 0
+// 		bottom -1em
+// 		border-bottom (7/16em) solid $white
+// 		border-left (7/16em) solid $white
+
+// 		+md-block()
+// 			bottom (-34/16em)
+
+// 		+lg-block()
+// 			bottom (-39/16em)
+	
+// 	&-empt
+// 		position absolute
+// 		right 0
+// 		top 0
+// 		bottom 0
+
+// 		&:before
+// 			content ''
+// 			display block
+// 			position absolute
+// 			font-size (16/32em)
+// 			width (23/16em)
+// 			height (23/16em)
+// 			left 0
+// 			top (-20/16em)
+// 			border-top (7/16em) solid $white
+// 			border-right (7/16em) solid $white
+
+// 			+md-block()
+// 				top (-30/16em)
+			
+// 			+lg-block()
+// 				top (-39/16em)

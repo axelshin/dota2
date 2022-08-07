@@ -1,0 +1,27 @@
+mixin intro(data)
+    section.section.section--intro
+        .intro
+            .intro__content-left
+                .intro__content-left-inner
+                    p.intro__data!=data.date
+                    h2.intro__title.corner!=data.title
+                    //- h2.intro__title.corner REGISTRATION#[br]AND FIRST#[br]PURCHASE #[br]BONUS
+                    .intro__text!=data.desc
+                    .btnn-row
+                        //- a(href="#scrollto-section--steps").btnn-primary.btnn-primary--intro.btnn-primary--white Как получить подарок
+                        a(href="#scrollto-section--steps").btnn-primary.btnn-primary--intro.btnn-primary--white Как получить подарок
+                            svg.btnn-primary__arrow(viewBox='0 0 31 10' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                path(d='M29.8582 5.47504C30.0925 5.24073 30.0925 4.86083 29.8582 4.62651L26.0398 0.808138C25.8055 0.573824 25.4256 0.573824 25.1913 0.808138C24.957 1.04245 24.957 1.42235 25.1913 1.65667L28.5854 5.05078L25.1913 8.44489C24.957 8.67921 24.957 9.05911 25.1913 9.29342C25.4256 9.52773 25.8055 9.52773 26.0398 9.29342L29.8582 5.47504ZM5.9998e-08 5.65078L29.434 5.65078L29.434 4.45078L-5.9998e-08 4.45078L5.9998e-08 5.65078Z' fill='white')
+                    a(href="#scrollto-social-top").more-link.more-link--intro Поделиться&nbsp;&nbsp;>
+                //- .intro__note
+                //-     .intro__note-left * 
+                //-     .intro__note-right Акция действует с&nbsp;05.12.2021 06:00&nbsp;CDT по&nbsp;26.12.2021 15:59&nbsp;CDT
+            
+            .intro__content-right
+            
+                .sticker.sticker--intro
+                    span.sticker__red получите за #[big 1] ₽.
+                    span.sticker__title Цена на&nbsp;сайте –
+                    span.sticker__price 
+                        span.sticker__price-num 1628
+                        span.sticker__valute ₽.
