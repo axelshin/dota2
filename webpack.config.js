@@ -4,7 +4,6 @@ const webpack = require("webpack");
 module.exports = {    
     entry: {
         main: "./src/js/index.js",
-        countries2: "./src/js/pages/countries2.js",
     },
 
     output: {

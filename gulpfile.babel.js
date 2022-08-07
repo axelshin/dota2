@@ -18,7 +18,7 @@ const requireDir = require("require-dir"),
         styles: {
             src: [ 
                 "./src/styles/main.{scss,sass,styl}",
-                "./src/styles/style.fab.{scss,css,sass,styl}",
+                // "./src/styles/style.fab.{scss,css,sass,styl}",
                 // "./src/styles/main2.{scss,sass,styl}",
                 // "./src/styles/main3.{scss,sass,styl}",
             ],

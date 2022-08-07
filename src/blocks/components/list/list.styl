@@ -1,0 +1,296 @@
+.stats-list
+    display -moz-box
+    display -webkit-box
+    display -webkit-flex
+    display -moz-flex
+    display -ms-flexbox
+    display flex
+    -webkit-flex-wrap wrap
+    -moz-flex-wrap wrap
+    -ms-flex-wrap wrap
+    flex-wrap wrap
+    padding 40px 0
+
+.stats-list-item
+    width calc(100% / 3 - 20px)
+    margin 10px
+    cursor pointer
+    -moz-user-select -moz-none
+    -o-user-select none
+    -khtml-user-select none
+    -webkit-user-select none
+    user-select none
+
+.stats-list-image
+    position relative
+    height 240px
+
+.stats-list-image-inner
+    background center center no-repeat
+    position relative
+    transition all 0.3s
+    position relative
+    height 240px
+    border-radius 10px
+    position relative
+    overflow hidden
+    display -moz-box
+    display -webkit-box
+    display -webkit-flex
+    display -moz-flex
+    display -ms-flexbox
+    display flex
+    -webkit-box-align center
+    -ms-flex-align center
+    -webkit-align-items center
+    -moz-align-items center
+    align-items center
+    -webkit-box-pack center
+    -ms-flex-pack center
+    -webkit-justify-content center
+    -moz-justify-content center
+    justify-content center
+    &:before
+        position absolute
+        left 0
+        right 0
+        top 0
+        bottom 0
+        content ''
+        display block
+        background #000
+        opacity 0.8
+        transition all 0.3s
+
+.stats-list-image-inner-yes
+    -webkit-background-size cover
+    background-size cover
+
+.stats-list-image-inner-no
+    background-size contain
+
+.stats-list-image-inner2
+    font-size 48px
+    padding 20px
+    position relative
+    transition all 0.3s
+    opacity 1
+
+.stats-list-image-inner3
+    font-size 48px
+    padding 20px 10px
+    transition all 0.3s
+    opacity 0
+    position absolute
+    text-shadow 5px 5px 3px #000
+    font-family 'rb'
+    font-size 40px
+    text-align center
+    color #fff
+
+.stats-body
+    padding 40px
+    line-height 2
+    font-size 20px
+    background 50% 50% no-repeat fixed
+    -webkit-background-size cover
+    background-size cover
+    position relative
+    z-index 1
+    border-radius 5px
+    &:after
+        position absolute
+        left 0
+        right 0
+        top 0
+        bottom 0
+        content ''
+        display block
+        background #000
+        opacity 0.8
+        transition all 0.3s
+        border-radius 5px
+        z-index -1
+    a
+        color red
+        text-decoration underline
+        &:hover
+            text-decoration none
+    p
+        &:first-child
+            margin-top 0px
+        &:last-child
+            margin-bottom 0px
+    .g-page-article__comment-list
+        margin 0
+    .g-form-captcha__name
+        color #000
+    textarea
+        height 100px
+
+@media (min-width: 980px)
+    .stats-body
+        text-align justify
+
+.stats-body-image-item
+    width 120px
+    height 120px
+    background 50% 50% no-repeat
+    -webkit-background-size cover
+    background-size cover
+    border-radius 10px
+    margin 5px
+    a
+        display block
+        width 120px
+        height 120px
+        line-height 0
+        font-size 0
+
+.stats-body-image-wrap
+    display -moz-box
+    display -webkit-box
+    display -webkit-flex
+    display -moz-flex
+    display -ms-flexbox
+    display flex
+    -webkit-flex-wrap wrap
+    -moz-flex-wrap wrap
+    -ms-flex-wrap wrap
+    flex-wrap wrap
+    -webkit-box-pack center
+    -ms-flex-pack center
+    -webkit-justify-content center
+    -moz-justify-content center
+    justify-content center
+    -webkit-box-align center
+    -ms-flex-align center
+    -webkit-align-items center
+    -moz-align-items center
+    align-items center
+    padding 0 0 20px
+    span
+        line-height 0
+        font-size 0
+
+.stats-body-music
+    font-size 16px
+    ul
+        padding 0
+        margin 0
+        list-style none
+    li
+        padding 4px 0
+    a
+        text-decoration none
+        &:hover
+            text-decoration underline
+
+.stats-body-music-play
+    width 24px
+    height 24px
+    display inline-block
+    vertical-align middle
+    background url(play-button.svg) 0 0 no-repeat
+    -webkit-background-size 24px 24px
+    background-size 24px 24px
+    margin 0 15px 0 0
+    cursor pointer
+    &.stop
+        width 20px
+        height 20px
+        border 2px solid #f00
+        background #dadada
+        position relative
+        &:after
+            position absolute
+            content ''
+            display block
+            width 10px
+            height 10px
+            background #f00
+            left 50%
+            top 50%
+            margin -5px 0 0 -5px
+
+.stats-body-title
+    font-size 28px
+
+.stats-body-comment-title
+    margin 20px 0 0
+    font-size 28px
+
+@media (min-width: 981px)
+    .stats-list-image
+        &:hover
+            .stats-list-image-inner2
+                opacity 0
+
+@media (min-width: 981px)
+    .stats-list-image
+        &:hover
+            .stats-list-image-inner3
+                opacity 1
+
+@media (min-width: 981px)
+    .stats-list-image
+        &:hover
+            .stats-list-image-inner
+                &:before
+                    opacity 0.4
+
+.popover-container
+    z-index 1000000 !important
+
+.popover-body
+    width 100%
+    max-width 1220px
+    background #000
+    padding 0
+    border 1px solid #797979
+
+body .lg-backdrop, body .lg-outer
+    z-index 1000000
+
+.s3-snow-flake-image
+    pointer-events none
+
+@media (max-width: 980px)
+    .wrap
+        padding 0 1.5306122449vw
+    .stats-list-item
+        width 46.4285714286vw
+        margin 1.0204081633vw
+        margin-bottom 20px
+        &.active
+            .stats-list-image
+                .stats-list-image-inner2
+                    opacity 0
+                .stats-list-image-inner3
+                    opacity 1
+                .stats-list-image-inner
+                    &:before
+                        opacity 0.3
+    .stats-list-image-inner
+        height 24.4897959184vw
+    .stats-list-image
+        height 24.4897959184vw
+    .stats-body
+        padding 20px
+        font-size 18px
+
+@media (max-width: 640px)
+    .stats-list
+        -webkit-box-pack center
+        -ms-flex-pack center
+        -webkit-justify-content center
+        -moz-justify-content center
+        justify-content center
+    .stats-list-item
+        width 300px
+    .stats-list-image-inner3
+        font-size 30px
+    .stats-list-image-inner
+        height 160px
+    .stats-list-image
+        height 160px

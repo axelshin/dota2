@@ -1,19 +1,10 @@
 extends ../layouts/default
 
 block variables
-	- const title = "Start_02_21 РФ"
+	- const title = "dota2"
 
 block content
-	include ../../blocks/components/intro/intro
-	include ../../blocks/components/steps/steps
-	include ../../blocks/components/banner/banner
-	include ../../blocks/components/products/products
-	include ../../blocks/components/video/video
-	include ../../blocks/components/share/share
-	include ../../blocks/components/timer2/timer2
-	include ../../blocks/components/facts2/facts2
-	include ../../blocks/components/share/share-bottom
-	include ../../blocks/components/popup2/popup2
+	include ../../blocks/components/list/list
 
 block scripts
 	script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js")
@@ -21,8 +12,6 @@ block scripts
 	script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js")
 	script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/ScrollToPlugin.min.js")
 	script(src="./js/main.js")
-	script(src="./js/countries2.js")
-	script(src="https://static.faberlic.com/resets/share_x.js")
 	script.
 		$(document).ready(function(ev) {
 			$('a[href^="#scrollto"]').bind('click.smoothscroll',function (e) {
@@ -35,21 +24,4 @@ block scripts
 					window.location.hash = target;
 				} );
 			});
-			(function ($) {
-				$(document).ready(function () {
-		
-				var buyBatton = document.querySelectorAll(".btnn-primary");
-				var wrapGreen = document.querySelectorAll(".more-link");
-		
-				wrapGreen.forEach(function(element) {
-					element.classList.add("js-landing-button");
-					element.setAttribute("data-title", element.innerText);
-				});
-					buyBatton.forEach(function(element) {
-					element.classList.add("js-landing-button");
-					element.setAttribute("data-title", element.innerText);
-				});
-					
-				})
-			})(jQuery);			
 		});
