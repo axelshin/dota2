@@ -8,6 +8,7 @@ import imageminPngquant from "imagemin-pngquant";
 import imageminZopfli from "imagemin-zopfli";
 import imageminMozjpeg from "imagemin-mozjpeg";
 import imageminGiflossy from "imagemin-giflossy";
+import newer from "gulp-newer";
 import debug from "gulp-debug";
 import browsersync from "browser-sync";
 import yargs from "yargs";
@@ -17,6 +18,7 @@ const argv = yargs.argv,
 
 gulp.task("images", () => {
     return gulp.src(paths.images.src)
+        .pipe(newer(paths.images.dist)) 
         .pipe(gulpif(production, imagemin([
             imageminGiflossy({
                 optimizationLevel: 3,
@@ -25,7 +27,7 @@ gulp.task("images", () => {
             }),
             imageminPngquant({
                 speed: 5,
-                quality: [0.6, 0.8]
+                quality: [0.8, 0.9]
             }),
             imageminZopfli({
                 more: true
@@ -51,5 +53,5 @@ gulp.task("images", () => {
         .pipe(debug({
             "title": "Images"
         }))
-        .on("end", browsersync.reload);
+        .pipe(browsersync.stream());
 });

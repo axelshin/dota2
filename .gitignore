@@ -11,7 +11,3 @@ ehthumbs.db
 Thumbs.db
 node_modules
 dist
-yarn.lock
-package-lock.json
-start_13_21
-start_*

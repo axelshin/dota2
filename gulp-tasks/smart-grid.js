@@ -21,16 +21,16 @@ gulp.task("smart-grid", (cb) => {
                 width: "20rem" // 320px
             },
             sm: {
-                width: "23.4375rem" // 375px
-            },
-            md: {
                 width: "36rem" // 576px
             },
-            mdd: {
-                width: "48rem" // 768px
+            md: {
+                width: "30rem" // 480px
             },
             lg: {
-                width: "64rem" // 1024px
+                width: "60rem" // 960px
+            },
+            lgg: {
+                width: "100rem" // 1600px
             },
             xl: {
                 width: "75rem" // 1200px
@@ -38,8 +38,8 @@ gulp.task("smart-grid", (cb) => {
             xxl: {
                 width: "100rem" // 1600px
             },
-            xxl2: {
-                width: "120rem" // 1600px
+            xxxl: {
+                width: "120rem" // 1920px
             }
         }
     });

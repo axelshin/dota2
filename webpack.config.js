@@ -1,7 +1,7 @@
 const path = require("path");
 const webpack = require("webpack");
 
-module.exports = {    
+module.exports = {
     entry: {
         main: "./src/js/index.js",
     },
@@ -31,8 +31,8 @@ module.exports = {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 use: {
-                    loader: "babel-loader",
-                    query: {
+                    loader: require.resolve("babel-loader"),
+                    options: {
                         presets: [
                             ["@babel/preset-env", { modules: false }]
                         ]

@@ -22,7 +22,10 @@ gulp.task("styles", () => {
         .pipe(gulpif(!production, sourcemaps.init()))
         .pipe(plumber())
         .pipe(stylus({
-            'include css': true
+            "include css": true,
+            define: {
+                production: production
+            }
         }))
         .pipe(groupmedia())
         .pipe(gulpif(production, autoprefixer({
